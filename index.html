@@ -1,109 +1,110 @@
-<!--
-  फाइल: Monetag-Small-Site.html
-  उद्देश्य: यह एक छोटा, क्लीन, कॉपी-पेस्ट-रेडी HTML पेज है जिसपर आप अपने Monetag के tags paste कर के
-  सीधे hosting करने के बाद Monetag को "Website URL" दे सकते हैं.
-
-  निर्देश (Hindi):
-  1) Monetag dashboard से जो tag/zone code मिले उन्हें नीचे दिए गए "PASTE MONETAG TAG HERE" वाले हिस्सों में चिपकाएँ।
-  2) Hosting के लिए GitHub Pages / Netlify / Vercel या कोई सादा वेब होस्ट इस्तेमाल करें। Monetag को HTTPS URL दें (https)।
-  3) Monetag अगर site verification मांगे तो उनके दिए हुए verification meta या file को भी root पर add करें।
-
-  नोट: मैं hidden/auto-click code नहीं डाल रहा — बस सही जगह पर आपके Monetag scripts लगने के लिए placeholder रखे हैं.
---><!doctype html>
-
-<html lang="hi">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Monetag Test Site — आपका नाम</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Monetag Website</title>
+
+  <!-- Monetag verification -->
   <meta name="monetag" content="f28f7a98bd6df5adfa7975c297f7718f">
-  <meta name="description" content="Monetag test site — simple demo page for monetization tags">
+
   <style>
-    :root{--bg:#f4f6fb;--card:#ffffff;--accent:#0b5ed7;--muted:#666}
-    body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Arial;background:var(--bg);color:#111}
-    .wrap{max-width:900px;margin:28px auto;padding:18px}
-    header{display:flex;align-items:center;gap:12px}
-    .logo{width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,#0b5ed7,#6610f2);display:flex;align-items:center;justify-content:center;color:white;font-weight:700}
-    .card{background:var(--card);padding:18px;border-radius:10px;box-shadow:0 8px 30px rgba(12,15,40,0.06);margin-top:16px}
-    .adbox{border:1px dashed #e0e6f0;padding:14px;border-radius:8px;margin-top:12px;background:#fbfdff}
-    .btn{display:inline-block;padding:10px 14px;border-radius:8px;background:var(--accent);color:white;text-decoration:none}
-    footer{margin-top:18px;color:var(--muted);font-size:13px;text-align:center}
-    small.note{display:block;color:var(--muted);margin-top:8px}
-  </style>  <!-- ====== Monetag Push / In-Page / Push placeholder ======
-       Monetag का Push / In-Page Push tag यहाँ paste करें (यदि Monetag ने head में tag देने को कहा है).
-       Example comment: <!-- PASTE MONETAG PUSH TAG FOR SITE HERE -->-->
-
-  <!-- PASTE MONETAG PUSH TAG FOR SITE HERE --></head>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #1d2671, #c33764);
+      color: #fff;
+      text-align: center;
+    }
+    header {
+      background: rgba(0,0,0,0.6);
+      padding: 20px;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    main {
+      padding: 30px;
+    }
+    .ad-section {
+      margin: 20px auto;
+      padding: 15px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 10px;
+      max-width: 700px;
+    }
+    footer {
+      margin-top: 40px;
+      padding: 15px;
+      background: rgba(0,0,0,0.6);
+      font-size: 14px;
+    }
+    a.offer-btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 25px;
+      background: #ff9800;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    a.offer-btn:hover {
+      background: #e67e22;
+    }
+  </style>
+</head>
 <body>
-  <div class="wrap">
-    <header>
-      <div class="logo">M</div>
-      <div>
-        <h1 style="margin:0;font-size:20px">Monetag Test Site</h1>
-        <div style="font-size:13px;color:var(--muted)">Small page for Monetag verification and testing</div>
-      </div>
-    </header><div class="card">
-  <h2 style="margin:0">कैसे use करें</h2>
-  <ol style="margin-top:10px">
-    <li>Monetag से जो tags मिलें उन्हें इस फाइल में दिए placeholders में paste करें।</li>
-    <li>फाइल को host करें और HTTPS URL Monetag को दें।</li>
-    <li>यदि Monetag verification बोले तो उनका meta या verification file root पर add करें।</li>
-  </ol>
-  <small class="note">(नीचे अलग-अलग ad-zone के लिए placeholders हैं — हर zone का tag अलग होगा)</small>
+  <header>
+    🌐 Welcome to My Monetag Ads Site
+  </header>
 
-  <div class="adbox" id="inpage-push">
-    <strong>In-Page Push / Banner zone</strong>
-    <div style="margin-top:8px;color:var(--muted);font-size:13px">यहाँ Monetag का In-Page Push / banner tag paste करें:</div>
-    <!-- PASTE MONETAG IN-PAGE PUSH TAG HERE -->
-  </div>
+  <main>
+    <h1>Enjoy Free Content + Ads</h1>
+    <p>This website is monetized using Monetag ads. Explore below 👇</p>
 
-  <div class="adbox" id="interstitial">
-    <strong>Interstitial / Vignette</strong>
-    <div style="margin-top:8px;color:var(--muted);font-size:13px">Interstitial tag यहाँ paste करें (यदि Monetag ने provide किया है):</div>
-    <!-- PASTE MONETAG INTERSTITIAL TAG HERE -->
-  </div>
+    <!-- Monetag Ads Section -->
+    <div class="ad-section">
+      <h2>Sponsored Ads</h2>
+      <script src="https://fpyf8.com/88/tag.min.js" data-zone="172250" async data-cfasync="false"></script>
 
-  <div class="adbox" id="onclick-popunder">
-    <strong>OnClick / Popunder (बटन पर trigger)</strong>
-    <div style="margin-top:8px;color:var(--muted);font-size:13px">Monetag का onclick / popunder code नीचे दिए बटन के साथ attach करें (या Monetag का callback function यहाँ रखें):</div>
-    <!-- PASTE MONETAG ONCLICK / POPUNDER TAG HERE -->
-    <div style="margin-top:10px">
-      <button id="actionBtn" class="btn">मुझे क्लिक करो (Demo)</button>
+      <script>
+        (function(s){
+          s.dataset.zone='9902648';
+          s.src='https://al5sm.com/tag.min.js';
+        })([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')));
+      </script>
+
+      <script src="https://vaugroar.com/act/files/tag.min.js?z=9902651" data-cfasync="false" async></script>
+
+      <script>
+        (function(s){
+          s.dataset.zone='9902656';
+          s.src='https://forfrogadiertor.com/tag.min.js';
+        })([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')));
+      </script>
+
+      <script>
+        (function(s){
+          s.dataset.zone='9902666';
+          s.src='https://groleegni.net/vignette.min.js';
+        })([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')));
+      </script>
+
+      <script>
+        (function(s){
+          s.dataset.zone='9902668';
+          s.src='https://gizokraijaw.net/vignette.min.js';
+        })([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')));
+      </script>
     </div>
-  </div>
 
-  <div class="adbox" id="smartlink">
-    <strong>SmartLink / Direct Link</strong>
-    <div style="margin-top:8px;color:var(--muted);font-size:13px">SmartLink URL यहाँ डालें — यह किसी CTA पर लगाकर टेस्ट करें:</div>
-    <!-- PASTE MONETAG SMARTLINK URL HERE -->
-    <div style="margin-top:10px">
-      <a id="smartLinkBtn" class="btn" href="#">Open SmartLink (Demo)</a>
-    </div>
-  </div>
+    <!-- Direct offer button -->
+    <a class="offer-btn" href="https://otieu.com/4/9902681" target="_blank">🔥 Check Special Offer 🔥</a>
+  </main>
 
-  <div style="margin-top:14px;color:var(--muted);font-size:13px">ध्यान दें: Monetag tags अपने dashboard से लें। hidden/auto clicks न करें — केवल user action पर ही popunder/redirects चलाएँ।</div>
-</div>
-
-<footer>
-  Host example: <strong>GitHub Pages</strong> / <strong>Netlify</strong> / <strong>Vercel</strong> — Monetag को जो URL दे रहा हैं वो HTTPS होना चाहिए।
-</footer>
-
-  </div>  <script>
-    // Demo: action button — Monetag का onclick code रखें यहाँ
-    document.getElementById('actionBtn').addEventListener('click', function(){
-      // Monetag का OnClick/Popunder code यहाँ चलेगा, जो आपको Monetag dashboard से मिलेगा.
-      alert('Monetag OnClick trigger का कोड यहाँ चलेगा — Monetag के dashboard से code paste करें।');
-    });
-
-    // Demo: SmartLink button — Monetag SmartLink URL डालें नीचे
-    document.getElementById('smartLinkBtn').addEventListener('click', function(e){
-      e.preventDefault();
-      var url = '#'; // <-- Replace with your Monetag SmartLink URL
-      if(url === '#'){
-        alert('Monetag SmartLink URL अभी नहीं डाला गया — dashboard से ले कर यहाँ डालें।');
-      } else {
-        window.open(url, '_blank');
-      }
-    });
-  </script></body>
+  <footer>
+    © 2025 My Monetag Website. All Rights Reserved.
+  </footer>
+</body>
 </html>
